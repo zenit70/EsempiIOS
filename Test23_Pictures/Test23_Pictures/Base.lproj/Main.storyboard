@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test23_Pictures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHT-Hc-PXr">
+                                <rect key="frame" x="16" y="28" width="343" height="369"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srn-3O-hpR">
+                                <rect key="frame" x="16" y="433" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="oiU-wa-0fE"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="btnCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fx5-Hp-7WL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1e-KS-FEn">
+                                <rect key="frame" x="303" y="433" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="INF-x8-gpO"/>
+                                </constraints>
+                                <state key="normal" title="Rullino"/>
+                                <connections>
+                                    <action selector="btnRullino:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wv6-hR-py7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZHT-Hc-PXr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="92X-5V-nxO"/>
+                            <constraint firstItem="Z1e-KS-FEn" firstAttribute="trailing" secondItem="ZHT-Hc-PXr" secondAttribute="trailing" id="AC6-di-xFZ"/>
+                            <constraint firstItem="Srn-3O-hpR" firstAttribute="leading" secondItem="ZHT-Hc-PXr" secondAttribute="leading" id="RKI-xr-vaZ"/>
+                            <constraint firstItem="ZHT-Hc-PXr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Z9H-7g-jnE"/>
+                            <constraint firstItem="Srn-3O-hpR" firstAttribute="baseline" secondItem="Z1e-KS-FEn" secondAttribute="baseline" id="dAd-jd-6EY"/>
+                            <constraint firstItem="Srn-3O-hpR" firstAttribute="top" secondItem="ZHT-Hc-PXr" secondAttribute="bottom" constant="36" id="g4a-vj-m2u"/>
+                            <constraint firstItem="ZHT-Hc-PXr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="o2O-Qw-vj0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Srn-3O-hpR" secondAttribute="bottom" constant="204" id="oXj-tS-hRj"/>
+                            <constraint firstItem="ZHT-Hc-PXr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="q9V-c7-rht"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ZHT-Hc-PXr" id="RK2-cf-9bo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
